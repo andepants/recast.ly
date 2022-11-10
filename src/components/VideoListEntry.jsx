@@ -1,9 +1,9 @@
-var VideoListEntry = ({video, clickedVideo}) => {
+var VideoListEntry = ({video, handleNewVideoClick}) => {
 
 
   return (
     <div className="video-list-entry media"
-    onClick={(event) => clickedVideo(video)}
+    onClick={(event) => handleNewVideoClick(video)}
     >
       <div className="media-left media-middle">
         <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
